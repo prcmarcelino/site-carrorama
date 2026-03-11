@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Carrorama - Site Institucional e Comercial
 
-## Getting Started
+Site institucional e comercial da Carrorama, focado em performance, SEO técnico, segurança e conversão.
 
-First, run the development server:
+## Stack
+
+- **Framework:** Next.js 16 (App Router), React 19, TypeScript
+- **Estilo:** Tailwind CSS 4, design tokens (cores, tipografia, espaçamento)
+- **Deploy:** Preparado para Vercel
+
+## Requisitos
+
+- Node.js 18+
+- pnpm (recomendado) ou npm
+
+## Instalação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Variáveis de ambiente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Copie o arquivo de exemplo e ajuste conforme o ambiente:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+cp .env.example .env.local
+```
 
-## Learn More
+Veja [.env.example](.env.example) para a lista de variáveis e descrição.
 
-To learn more about Next.js, take a look at the following resources:
+## Desenvolvimento
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Abre [http://localhost:3000](http://localhost:3000).
 
-## Deploy on Vercel
+## Build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+pnpm build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Produção
+
+```bash
+pnpm start
+```
+
+## Deploy (Vercel)
+
+1. Conecte o repositório ao Vercel.
+2. Configure as variáveis de ambiente no painel (Production e Preview).
+3. Deploy automático a cada push na branch principal (ou conforme configurado).
+
+O Vercel detecta Next.js automaticamente; use o Build Command padrão `pnpm build` (ou deixe em branco).
+
+## Estrutura do projeto
+
+```
+src/
+  app/              # App Router: rotas e layouts
+    api/contact/    # API do formulário de contato
+  components/
+    layout/         # Header, Footer, MobileNav
+    sections/       # Seções por página (home, planos, contato)
+    ui/             # Button, Card, Input
+  lib/              # Constantes, SEO, utils, design tokens
+public/
+  images/           # Imagens (otimizar com next/image)
+```
+
+## Páginas
+
+| Rota        | Descrição                    |
+|------------|------------------------------|
+| `/`        | Home                         |
+| `/plataforma` | Tecnologia e arquitetura  |
+| `/modulos` | Módulos do sistema           |
+| `/planos`  | Planos Starter e Elite, FAQ  |
+| `/sobre`   | História, missão, contato     |
+| `/contato` | Formulário e dados de contato |
+
+## Funcionalidades
+
+- **Performance:** Server Components, next/image (AVIF/WebP), lazy loading, fontes com `next/font`.
+- **SEO:** Metadata por página, Open Graph, Twitter Cards, JSON-LD (Organization, Product, FAQPage), sitemap.xml, robots.txt, canonical.
+- **Segurança:** Headers (CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy), sanitização e validação no formulário, rate limit, honeypot.
+- **Acessibilidade:** Contraste WCAG AA, link “Pular para o conteúdo”, navegação por teclado, focus visível, aria-labels onde necessário.
+- **Conversão:** CTAs “Começar grátis” preparados para Stripe; formulário de contato funcional (API `/api/contact`); estrutura pronta para GTM, GA4 e Meta Pixel.
+
+## Melhorias futuras
+
+Ver [MELHORIAS_FUTURAS.md](MELHORIAS_FUTURAS.md).
+
+## Licença
+
+Projeto privado - Carrorama.

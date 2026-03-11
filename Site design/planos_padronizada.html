@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Planos - Carrorama</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: 'class', theme: {extend: {colors: {primary: '#F59E0B', brand: '#F59E0B', 'brand-soft': '#FFF3D6', 'bg-main': '#F5F6F7', 'text-main': '#111827', 'dark-surface': '#1F1F1F', success: '#16C35B', danger: '#DC2626'}, fontFamily: {display: 'Inter'}, borderRadius: {DEFAULT: '0.125rem', lg: '0.25rem', xl: '0.5rem', full: '0.75rem'}}}};</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-display dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased bg-[#F5F6F7]">
+<!-- Fixed Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#E5E7EB]">
+<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="text-[#F4A261]">
+<svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-xl font-black tracking-tight text-slate-900 dark:text-slate-100">Carrorama</span>
+</div>
+<nav class="hidden md:flex items-center gap-8"><a class="text-sm font-medium text-[#1C1E21] hover:text-[#F4A261] transition-colors" href="#">Plataforma</a><a class="text-sm font-medium text-[#1C1E21] hover:text-[#F4A261] transition-colors" href="#">Módulos</a><a class="text-sm font-medium text-[#F4A261] font-bold transition-colors" href="#">Planos</a><a class="text-sm font-medium text-[#1C1E21] hover:text-[#F4A261] transition-colors" href="#">Sobre</a></nav>
+<div class="flex items-center gap-4"><button class="text-sm font-bold px-4 py-2 text-[#1C1E21] hover:text-[#F4A261] transition-colors">Entrar</button><button class="bg-[#F4A261] text-white text-sm font-bold px-5 py-2 rounded-[12px] hover:brightness-105 transition-all">Começar agora</button></div>
+</div>
+</header>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 mb-16 text-center">
+<h1 class="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white mb-4">
+                Escolha o plano ideal para sua frota.
+            </h1>
+<p class="text-lg text-slate-600 dark:text-slate-400 font-medium">
+                Transparência total. Sem taxa de adesão.
+            </p>
+</section>
+<!-- Pricing Cards -->
+<section class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+<!-- Starter Plan -->
+<div class="flex flex-col p-8 rounded-xl border border-[#D1D5DB] bg-white shadow-sm relative overflow-hidden group transition-all">
+<div class="mb-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold text-[#111827]">Starter</h3>
+<span class="text-xs font-bold uppercase tracking-wider bg-[#FFF3D6] text-[#F59E0B] px-3 py-1 rounded-full">7 dias grátis</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-black text-[#111827]">R$ 49,90</span>
+<span class="text-slate-500 text-sm font-medium">/veículo/mês</span>
+</div>
+<p class="text-xs text-slate-400 mt-2">Mínimo de 5 veículos</p>
+</div>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Painel Administrativo
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Gestão Financeira
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Dashboards de Performance
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Controle de Combustível
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Plano de Manutenção
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Gestão de Documentos
+                    </li>
+<li class="flex items-center gap-3 text-sm text-slate-400">
+<span class="material-symbols-outlined text-[#DC2626] text-xl">cancel</span>
+                        Sem Rastreamento Real-time
+                    </li>
+</ul>
+<button class="w-full py-4 rounded-lg bg-[#F59E0B] text-white font-bold hover:brightness-110 transition-all shadow-md shadow-orange-200">
+                    Teste Grátis 7 dias
+                </button>
+</div>
+<!-- Elite Plan -->
+<div class="flex flex-col p-8 rounded-xl border border-[#D1D5DB] bg-white shadow-sm relative overflow-hidden group transition-all">
+<div class="mb-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold text-[#111827]">Elite</h3>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-black text-[#111827]">R$ 109,90</span>
+<span class="text-slate-500 text-sm font-medium">/veículo/mês</span>
+</div>
+<p class="text-xs text-slate-400 mt-2">Tecnologia de ponta em telemetria</p>
+</div>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-center gap-3 text-sm font-bold text-[#F59E0B]">
+<span class="material-symbols-outlined text-xl">stars</span>
+                        Tudo no Starter +
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Rastreamento em Tempo Real
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Otimização de Rotas Inteligente
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Sensores de Velocidade e Frenagem
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Média de Consumo por Trecho
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Alarmes de Segurança 24h
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#111827]">
+<span class="material-symbols-outlined text-[#16C35B] text-xl">check_circle</span>
+                        Cerca Eletrônica (Geofencing)
+                    </li>
+</ul>
+<button class="w-full py-4 rounded-lg bg-[#F59E0B] text-white font-black hover:brightness-110 shadow-lg shadow-orange-200 transition-all">
+                    Falar com Especialista
+                </button>
+</div>
+</section>
+<!-- Comparison Table -->
+<section class="max-w-6xl mx-auto px-6 mb-24">
+<h2 class="text-3xl font-black mb-12 text-center">Comparativo Detalhado</h2>
+<div class="overflow-x-auto rounded-xl border border-primary/10 shadow-sm bg-white dark:bg-slate-900/50">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-slate-50">
+<th class="p-6 text-sm font-bold text-slate-500 uppercase tracking-widest">Recurso</th>
+<th class="p-6 text-center text-sm font-bold uppercase">Starter</th>
+<th class="p-6 text-center text-sm font-bold uppercase text-primary">Elite</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-primary/5"><tr>
+<td class="p-6 text-sm font-medium text-[#111827]">Gestão Administrativa &amp; Multi-usuários</td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#16C35B]">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#16C35B]">check_circle</span></td>
+</tr>
+<tr>
+<td class="p-6 text-sm font-medium text-[#111827]">Controle Financeiro de Custos</td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#16C35B]">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#16C35B]">check_circle</span></td>
+</tr>
+<tr>
+<td class="p-6 text-sm font-medium text-[#111827]">Rastreamento via GPS (A cada 30s)</td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#DC2626]">cancel</span></td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#16C35B]">check_circle</span></td>
+</tr>
+<tr>
+<td class="p-6 text-sm font-medium text-[#111827]">Relatórios Avançados de BI</td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#DC2626]">cancel</span></td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#16C35B]">check_circle</span></td>
+</tr>
+<tr>
+<td class="p-6 text-sm font-medium text-[#111827]">Telemetria de Motor e Velocidade</td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#DC2626]">cancel</span></td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#16C35B]">check_circle</span></td>
+</tr>
+<tr>
+<td class="p-6 text-sm font-medium text-[#111827]">Suporte Priority 24/7</td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#DC2626]">cancel</span></td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-[#16C35B]">check_circle</span></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="max-w-4xl mx-auto px-6">
+<h2 class="text-3xl font-black mb-12 text-center">Perguntas Frequentes</h2>
+<div class="space-y-4"><div class="p-6 rounded-lg bg-white border border-slate-100 shadow-sm">
+<h4 class="font-bold mb-2 text-[#111827]">Como funciona o período de 7 dias grátis?</h4>
+<p class="text-sm text-slate-600">No plano Starter, você pode cadastrar sua frota e utilizar todos os recursos administrativos por 7 dias sem cobrança. Não solicitamos cartão de crédito para o trial.</p>
+</div>
+<div class="p-6 rounded-lg bg-white border border-slate-100 shadow-sm">
+<h4 class="font-bold mb-2 text-[#111827]">Preciso instalar algum hardware para o plano Elite?</h4>
+<p class="text-sm text-slate-600">Sim, o plano Elite utiliza um dispositivo de telemetria OBD-II de fácil instalação. Enviamos o hardware e oferecemos suporte remoto para configuração.</p>
+</div>
+<div class="p-6 rounded-lg bg-white border border-slate-100 shadow-sm">
+<h4 class="font-bold mb-2 text-[#111827]">Posso cancelar a qualquer momento?</h4>
+<p class="text-sm text-slate-600">Sim, não temos fidelidade contratual nos planos mensais. Você pode solicitar o cancelamento a qualquer momento através do painel administrativo.</p>
+</div>
+<div class="p-6 rounded-lg bg-white border border-slate-100 shadow-sm">
+<h4 class="font-bold mb-2 text-[#111827]">Existe desconto para frotas maiores?</h4>
+<p class="text-sm text-slate-600">Para frotas acima de 50 veículos, temos condições personalizadas. Entre em contato com nosso time comercial.</p>
+</div></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="text-white py-16 bg-[#2B2B2B]">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12"><div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="text-[#F4A261]">
+<svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-xl font-black tracking-tight text-white">Carrorama</span>
+</div>
+<p class="text-sm text-gray-300">A solução inteligente para gestão de frotas leve. Reduza custos operacionais com tecnologia de ponta.</p>
+<div class="flex gap-4 mt-6">
+<a class="text-[#F4A261] hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-[#F4A261] hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+<div>
+<h5 class="font-bold mb-6 text-white uppercase tracking-wider text-xs">Soluções</h5>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-[#F4A261] transition-colors" href="#">Plataforma</a></li>
+<li><a class="hover:text-[#F4A261] transition-colors" href="#">Rastreamento</a></li>
+<li><a class="hover:text-[#F4A261] transition-colors" href="#">Telemetria</a></li>
+<li><a class="hover:text-[#F4A261] transition-colors" href="#">Dashboards</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6 text-white uppercase tracking-wider text-xs">Institucional</h5>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-[#F4A261] transition-colors" href="#">Sobre Nós</a></li>
+<li><a class="hover:text-[#F4A261] transition-colors" href="#">Blog do Gestor</a></li>
+<li><a class="hover:text-[#F4A261] transition-colors" href="#">Carreiras</a></li>
+<li><a class="hover:text-[#F4A261] transition-colors" href="#">Privacidade</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6 text-white uppercase tracking-wider text-xs">Suporte</h5>
+<ul class="space-y-4 text-sm text-gray-400">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[#F4A261] text-lg">mail</span> suporte@carrorama.com.br</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[#F4A261] text-lg">phone</span> 0800 123 4567</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[#F4A261] text-lg">location_on</span> São Paulo, SP</li>
+</ul>
+</div></div>
+<div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/10 text-center text-xs text-gray-500">
+            © 2024 Carrorama Gestão de Frotas. Todos os direitos reservados.
+        </div>
+</footer>
+</body></html>

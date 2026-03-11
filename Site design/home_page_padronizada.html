@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "brand": "#F59E0B",
+                        "brand-hover": "#D97706",
+                        "brand-soft": "#FFF3D6",
+                        "background-light": "#F5F6F7",
+                        "background-alt": "#E6E8EB",
+                        "surface": "#FFFFFF",
+                        "dark": "#1F1F1F",
+                        "dark-2": "#2E2E2E",
+                        "success": "#16C35B",
+                        "danger": "#DC2626",
+                        "text-muted": "#4B5563",
+                        "border-base": "#D1D5DB"
+                    },
+                    fontFamily: {
+                        "display": ["Sora", "Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light font-body text-slate-900">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#E5E7EB] backdrop-blur-md">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-brand p-2 rounded-lg" style="background-color: #F4A261;">
+<span class="material-symbols-outlined text-white text-2xl font-bold" style="">local_shipping</span>
+</div>
+<h2 class="text-2xl font-black tracking-tight text-slate-900 dark:text-white uppercase" style="">Carrorama</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-[#1C1E21] hover:text-[#F4A261] transition-colors" href="#" style="">Plataforma</a>
+<a class="text-sm font-semibold text-[#1C1E21] hover:text-[#F4A261] transition-colors" href="#" style="">Módulos</a>
+<a class="text-sm font-semibold text-[#1C1E21] hover:text-[#F4A261] transition-colors" href="#" style="">Planos</a>
+<a class="text-sm font-semibold text-[#1C1E21] hover:text-[#F4A261] transition-colors" href="#" style="">Sobre</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="text-sm font-semibold text-[#1C1E21] hover:text-[#F4A261] transition-colors px-4 py-2" href="#" style="">Entrar</a>
+<button class="bg-brand hover:bg-brand-hover text-white font-bold py-2.5 px-6 rounded-lg transition-all text-sm" style="background-color: #F4A261;">
+                    Começar agora
+                </button>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<section class="max-w-7xl mx-auto px-6 py-20 lg:py-32 grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-soft border border-brand/20 text-brand text-xs font-bold uppercase tracking-wider" style="">
+<span class="relative flex h-2 w-2">
+<span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
+</span>
+                    GESTÃO DE FROTA INTELIGENTE</div>
+<h1 class="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900 dark:text-white" style="">
+                    Informação que vira <span class="text-brand" style="">economia.</span>
+</h1>
+<p class="text-lg lg:text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed" style="">
+                    Plataforma completa de gestão e inteligência para frotas. Reduza custos, aumente a produtividade e tenha controle total da sua operação em tempo real.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-brand hover:bg-brand-hover text-white font-bold h-14 px-8 rounded-xl transition-all shadow-lg shadow-brand/20 flex items-center justify-center gap-2" style="">
+                        Começar grátis por 7 dias
+                        <span class="material-symbols-outlined" style="">arrow_forward</span>
+</button>
+<button class="bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 hover:border-primary font-bold h-14 px-8 rounded-xl transition-all" style="">
+                        Ver planos
+                    </button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-brand/10 blur-3xl rounded-full"></div>
+<div class="relative bg-slate-900 rounded-2xl border border-slate-800 shadow-2xl overflow-hidden aspect-[4/3] flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-80" data-alt="Dashboard showing fleet statistics and maps" data-location="São Paulo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZRggT-0ob2aHYPz-kNvv9xeA_BR1AlJj5TRU4OZqfUd2xNNhUx4c4nTcsnfRghkRphrsCRwQwYRUytwJLgwSOjkhXES7LgvWhpd-uaw0sz55JB3NNPEbYFrrCI_wQe4kaznzl5JDrHACRoEp2XK9YoPODovNk4m_HTgs4mwP-A-urGoePF26QgJBsxIIu0KOaeyDIcT8zQEtHdAHqoirk3imopDMM_JwBPZqN0m5DrjbScKGYi75mLzp4K2woSknnRfQr864qnboq" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-4 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
+<div class="flex justify-between items-center text-white">
+<div class="flex gap-4">
+<div class="size-10 rounded-lg bg-success flex items-center justify-center">
+<span class="material-symbols-outlined text-background-dark" style="">trending_down</span>
+</div>
+<div>
+<p class="text-xs opacity-70" style="">Redução de Custos</p>
+<p class="text-xl font-bold" style="">-24.8% mensal</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-brand text-3xl" style="">insights</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-slate-900/50 py-24 border-y border-slate-100 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+<h2 class="text-3xl lg:text-4xl font-black" style="">Suas dores, nossas soluções</h2>
+<p class="text-slate-600 dark:text-slate-400" style="">Transformamos os maiores desafios operacionais em oportunidades de crescimento para sua empresa.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="p-8 rounded-2xl bg-surface border border-slate-200 group hover:border-brand transition-all shadow-sm">
+<div class="size-12 rounded-xl bg-brand-soft flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+<span class="material-symbols-outlined" style="">gas_meter</span>
+</div>
+<h3 class="text-xl font-bold mb-3" style="">Consumo de combustível</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed" style="">Reduza gastos excessivos com monitoramento detalhado e identificação de desperdícios.</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface border border-slate-200 group hover:border-brand transition-all shadow-sm">
+<div class="size-12 rounded-xl bg-brand-soft flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+<span class="material-symbols-outlined" style="">build</span>
+</div>
+<h3 class="text-xl font-bold mb-3" style="">Manutenção preventiva</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed" style="">Evite quebras inesperadas com alertas inteligentes baseados em quilometragem e tempo.</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface border border-slate-200 group hover:border-brand transition-all shadow-sm">
+<div class="size-12 rounded-xl bg-brand-soft flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+<span class="material-symbols-outlined" style="">visibility_off</span>
+</div>
+<h3 class="text-xl font-bold mb-3" style="">Falta de controle</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed" style="">Tenha visibilidade total sobre cada veículo da frota, localização e status em tempo real.</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface border border-slate-200 group hover:border-brand transition-all shadow-sm">
+<div class="size-12 rounded-xl bg-brand-soft flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+<span class="material-symbols-outlined" style="">wrong_location</span>
+</div>
+<h3 class="text-xl font-bold mb-3" style="">Paradas não autorizadas</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed" style="">Identifique desvios de rota e paradas indevidas que afetam a rentabilidade da operação.</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface border border-slate-200 group hover:border-brand transition-all shadow-sm">
+<div class="size-12 rounded-xl bg-brand-soft flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+<span class="material-symbols-outlined" style="">gavel</span>
+</div>
+<h3 class="text-xl font-bold mb-3" style="">Multas e infrações</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed" style="">Gerencie condutores com ranking de direção e minimize custos com multas e sinistros.</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface border border-slate-200 group hover:border-brand transition-all shadow-sm">
+<div class="size-12 rounded-xl bg-brand-soft flex items-center justify-center text-brand mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+<span class="material-symbols-outlined" style="">bar_chart_4_bars</span>
+</div>
+<h3 class="text-xl font-bold mb-3" style="">Escassez de dados</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed" style="">Transforme números brutos em relatórios estratégicos e decisões baseadas em fatos.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-dark text-white overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Abstract business data pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx8bNarLj_8XtSA7L04o1bXvaNfviyGHii0rLRC9Rx3WBMn_veFITOxm3UhJ0j95AD7KRD9Ym9WUMNiCitr9GOdftigT0JdtXdGsnYQWbYj38FAybjpIaKQekFmtkyjtfhL2T2jaWZZyewv6H0k01JzYYjaqcMSNWlrcXVfQyKEczEbdVa4b_kwYYwBwDYG3eCzursgHTTckDdH2TNJ9l5NwuPXgkKasRdIp8uL0TZrS6RTlhDAI3Hoh54nNvETIruXXBSgcx8by0f" style=""/>
+</div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="mb-16">
+<h2 class="text-3xl lg:text-4xl font-black mb-4" style="">Impacto Financeiro Real</h2>
+<p class="text-slate-400 max-w-xl" style="">Média de resultados obtidos por empresas que implementaram a Carrorama no primeiro semestre.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-2">
+<p class="text-6xl font-black text-success" style="">30%</p>
+<p class="text-xl font-bold" style="">Redução de custos fixos</p>
+<p class="text-slate-400 text-sm" style="">Otimização de processos e eliminação de desperdícios operacionais.</p>
+</div>
+<div class="space-y-2">
+<p class="text-6xl font-black text-success" style="">28%</p>
+<p class="text-xl font-bold" style="">Economia de combustível</p>
+<p class="text-slate-400 text-sm" style="">Através do controle de rotas e monitoramento de velocidade média.</p>
+</div>
+<div class="space-y-2">
+<p class="text-6xl font-black text-success" style="">36%</p>
+<p class="text-xl font-bold" style="">Aumento de produtividade</p>
+<p class="text-slate-400 text-sm" style="">Mais entregas/visitas realizadas com a mesma estrutura de frota.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="text-center mb-20"><h2 class="text-3xl lg:text-5xl font-black mb-16" style="">Como funciona</h2>
+<div class="space-y-32">
+<!-- Gestão -->
+<div class="max-w-3xl mx-auto text-left">
+<div class="space-y-6 order-2 lg:order-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-soft text-brand text-xs font-bold uppercase tracking-wider" style="">
+<span class="material-symbols-outlined text-sm" style="">inventory</span>
+                EFICIÊNCIA OPERACIONAL
+            </div>
+<h3 class="text-3xl lg:text-4xl font-black text-slate-900" style="">Gestão Centralizada</h3>
+<p class="text-lg text-slate-600 leading-relaxed" style="">
+                Centralize toda a sua operação em uma única interface intuitiva. Do controle rigoroso de gastos com combustível ao histórico detalhado de manutenção e documentação da frota.
+            </p>
+<ul class="space-y-4 text-slate-600">
+<li class="flex items-center gap-3 font-medium" style=""><span class="material-symbols-outlined text-brand" style="">check_circle</span> Gestão total de custos e despesas</li>
+<li class="flex items-center gap-3 font-medium" style=""><span class="material-symbols-outlined text-brand" style="">check_circle</span> Documentação digital sempre em dia</li>
+<li class="flex items-center gap-3 font-medium" style=""><span class="material-symbols-outlined text-brand" style="">check_circle</span> Histórico de manutenções preventivas</li>
+</ul>
+</div>
+</div>
+<!-- Controle -->
+<div class="max-w-3xl mx-auto text-left">
+<div class="space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-soft text-brand text-xs font-bold uppercase tracking-wider" style="">
+<span class="material-symbols-outlined text-sm" style="">settings_remote</span>
+                CONTROLE TOTAL
+            </div>
+<h3 class="text-3xl lg:text-4xl font-black text-slate-900" style="">Monitoramento e Alertas</h3>
+<p class="text-lg text-slate-600 leading-relaxed" style="">
+                Acompanhe o status da sua frota em tempo real com telemetria avançada. Receba alertas automáticos sobre comportamentos de risco e gere relatórios estratégicos para tomadas de decisão rápidas.
+            </p>
+<ul class="space-y-4 text-slate-600">
+<li class="flex items-center gap-3 font-medium" style=""><span class="material-symbols-outlined text-brand" style="">check_circle</span> Alertas inteligentes de velocidade</li>
+<li class="flex items-center gap-3 font-medium" style=""><span class="material-symbols-outlined text-brand" style="">check_circle</span> Rastreamento contínuo via GPS</li>
+<li class="flex items-center gap-3 font-medium" style=""><span class="material-symbols-outlined text-brand" style="">check_circle</span> Ranking detalhado de condutores</li>
+</ul>
+</div>
+</div>
+<!-- Inteligência -->
+<div class="max-w-3xl mx-auto text-left">
+<div class="space-y-6 order-2 lg:order-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-soft text-brand text-xs font-bold uppercase tracking-wider" style="">
+<span class="material-symbols-outlined text-sm" style="">psychology</span>
+                ESTRATÉGIA BASEADA EM DADOS
+            </div>
+<h3 class="text-3xl lg:text-4xl font-black text-slate-900" style="">Inteligência Analítica</h3>
+<p class="text-lg text-slate-600 leading-relaxed" style="">
+                Transforme dados em resultados reais. Nossa plataforma utiliza análises estratégicas para identificar gargalos operacionais e oportunidades de redução de custos em toda a sua frota.
+            </p>
+<ul class="space-y-4 text-slate-600">
+<li class="flex items-center gap-3 font-medium" style=""><span class="material-symbols-outlined text-brand" style="">check_circle</span>Identifique onde sua frota está perdendo dinheiro</li>
+<li class="flex items-center gap-3 font-medium" style=""><span class="material-symbols-outlined text-brand" style="">check_circle</span> Análise de performance em tempo real</li>
+<li class="flex items-center gap-3 font-medium" style=""><span class="material-symbols-outlined text-brand" style="">check_circle</span> Insights preditivos para economia</li>
+</ul>
+</div>
+</div>
+</div></div>
+</section>
+<section class="py-24 bg-white dark:bg-slate-900/50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl lg:text-4xl font-black" style="">Conheça os Planos</h2>
+<p class="text-slate-600 dark:text-slate-400 mt-4" style="">Escolha a escala ideal para sua frota.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<div class="p-10 rounded-3xl bg-surface border border-slate-200 shadow-xl flex flex-col items-center">
+<p class="font-bold text-slate-500 uppercase tracking-widest text-sm" style="">Starter</p>
+<div class="my-6 text-center">
+<span class="text-slate-400 text-lg" style="">R$</span>
+<span class="text-5xl font-black text-slate-900" style="">49,90</span>
+<span class="text-slate-400 text-sm" style="">/veículo/mês</span>
+</div>
+<ul class="space-y-4 mb-10 w-full text-sm text-slate-600">
+<li class="flex items-center gap-3" style=""><span class="material-symbols-outlined text-[#0df259] text-xl" style="">check_circle</span> Gestão de Manutenção</li>
+<li class="flex items-center gap-3" style=""><span class="material-symbols-outlined text-[#0df259] text-xl" style="">check_circle</span> Controle de Combustível</li>
+<li class="flex items-center gap-3" style=""><span class="material-symbols-outlined text-[#0df259] text-xl" style="">check_circle</span> Relatórios Básicos</li>
+</ul>
+<button class="w-full py-4 rounded-xl border-2 border-slate-300 font-bold hover:border-[#0df259] hover:text-[#0df259] transition-all text-slate-900" style="">Assinar Starter</button>
+</div>
+<div class="p-10 rounded-3xl bg-surface border border-slate-200 shadow-xl flex flex-col items-center">
+<p class="font-bold text-slate-500 uppercase tracking-widest text-sm" style="">Elite</p>
+<div class="my-6 text-center">
+<span class="text-slate-400 text-lg" style="">R$</span>
+<span class="text-5xl font-black text-slate-900" style="">109,90</span>
+<span class="text-slate-400 text-sm" style="">/veículo/mês</span>
+</div>
+<ul class="space-y-4 mb-10 w-full text-sm text-slate-600">
+<li class="flex items-center gap-3" style=""><span class="material-symbols-outlined text-[#0df259] text-xl" style="">check_circle</span> Telemetria Avançada</li>
+<li class="flex items-center gap-3" style=""><span class="material-symbols-outlined text-[#0df259] text-xl" style="">check_circle</span> Ranking de Condutores</li>
+<li class="flex items-center gap-3" style=""><span class="material-symbols-outlined text-[#0df259] text-xl" style="">check_circle</span> Inteligência Artificial Predict</li>
+<li class="flex items-center gap-3" style=""><span class="material-symbols-outlined text-[#0df259] text-xl" style="">check_circle</span> Suporte 24/7 Dedicado</li>
+</ul>
+<button class="w-full py-4 rounded-xl border-2 border-slate-300 font-bold hover:border-[#0df259] hover:text-[#0df259] transition-all text-slate-900" style="">Assinar Elite</button>
+</div>
+</div><div class="mt-12 text-center">
+<a class="inline-flex items-center gap-2 text-brand font-bold hover:text-brand-hover transition-colors group" href="#" style="">
+        Ver comparação completa
+        <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform" style="">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="bg-background-alt rounded-[2.5rem] p-12 lg:p-20 border border-slate-200">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-3xl lg:text-5xl font-black mb-8 leading-tight" style="">Quem confia na Carrorama</h2>
+<div class="flex flex-wrap gap-10 opacity-50 grayscale hover:grayscale-0 transition-all">
+<span class="font-black text-2xl" style="">LOGGI</span>
+<span class="font-black text-2xl" style="">FEDEX</span>
+<span class="font-black text-2xl" style="">LOCALIZA</span>
+<span class="font-black text-2xl" style="">MOVIVA</span>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
+<div class="flex gap-1 text-brand mb-4">
+<span class="material-symbols-outlined fill-1" style="">star</span>
+<span class="material-symbols-outlined fill-1" style="">star</span>
+<span class="material-symbols-outlined fill-1" style="">star</span>
+<span class="material-symbols-outlined fill-1" style="">star</span>
+<span class="material-symbols-outlined fill-1" style="">star</span>
+</div>
+<p class="italic text-lg text-slate-700 dark:text-slate-300 mb-6 leading-relaxed" style="">
+                            "A implementação da Carrorama reduziu nossos custos operacionais em 22% logo nos primeiros 3 meses. A visibilidade que temos hoje é algo que nunca conseguimos com planilhas."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Client profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyBgf8yRfJ97uUOmppLmijWJmF7cc9dxim8N49UV3WW6HfqcaZGV5XLG0UZPj8KtOL1tWseSlG0hhbP2H3v_ZsiHR49xAD9SgeEvUMLVipRggOczbYP9BEs_-gexuyXn7n6jOqon7V5bDDukLwEsubv_4BC2Rxtu0ySHtlifQeha1NBxYbtRDFNJy5-_nT8xkP-VW3rLoRArKKPVLQFACdBjUpvduV3J4SnizTh-419cNfYv_zhVSjlsX8_sq6v_tGOAV4plCfe1m-" style=""/>
+</div>
+<div>
+<p class="font-bold" style="">Ricardo Alencar</p>
+<p class="text-sm text-slate-500" style="">Gerente de Logística - TransBrasil</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-dark text-white">
+<div class="max-w-7xl mx-auto px-6 text-center space-y-10">
+<h2 class="text-4xl lg:text-6xl font-black max-w-4xl mx-auto leading-tight" style="">
+                    Pronto para transformar sua gestão de frotas?
+                </h2>
+<p class="text-lg lg:text-xl font-medium max-w-2xl mx-auto opacity-80" style="">
+                    Junte-se a mais de 1.200 empresas que economizam tempo e dinheiro com nossa tecnologia de ponta.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-brand text-white font-black h-16 px-12 rounded-2xl hover:scale-105 transition-transform text-lg" style="">
+                        Começar grátis agora
+                    </button>
+<button class="bg-white/10 border-2 border-white/20 font-black h-16 px-12 rounded-2xl hover:bg-white hover:text-dark transition-all text-lg" style="">
+                        Falar com consultor
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#2B2B2B] text-slate-300 py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<div class="bg-brand p-2 rounded-lg" style="background-color: #F4A261;">
+<span class="material-symbols-outlined text-background-dark text-xl font-bold" style="">local_shipping</span>
+</div>
+<h2 class="text-white font-bold mb-6" style="">Carrorama</h2>
+</div>
+<p class="text-sm leading-relaxed" style="">Inteligência e tecnologia aplicadas à mobilidade corporativa. Líder nacional em gestão de frotas leve e pesada.</p>
+<div class="flex gap-4 mt-6"><a class="text-white hover:text-[#F4A261] transition-colors" href="#"><span class="material-symbols-outlined">public</span></a><a class="text-white hover:text-[#F4A261] transition-colors" href="#"><span class="material-symbols-outlined">share</span></a><a class="text-white hover:text-[#F4A261] transition-colors" href="#"><span class="material-symbols-outlined">contact_support</span></a></div></div>
+<div>
+<h4 class="text-white font-bold mb-6" style="">Plataforma</h4>
+<ul class="space-y-4 text-sm">
+<li class="" style=""><a class="hover:text-[#F4A261] transition-colors" href="#" style="">Funcionalidades</a></li>
+<li class="" style=""><a class="hover:text-[#F4A261] transition-colors" href="#" style="">Rastreamento</a></li>
+<li class="" style=""><a class="hover:text-[#F4A261] transition-colors" href="#" style="">Telemetria</a></li>
+<li class="" style=""><a class="hover:text-[#F4A261] transition-colors" href="#" style="">Planos e Preços</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6" style="">Empresa</h4>
+<ul class="space-y-4 text-sm">
+<li class="" style=""><a class="hover:text-[#F4A261] transition-colors" href="#" style="">Sobre Nós</a></li>
+<li class="" style=""><a class="hover:text-[#F4A261] transition-colors" href="#" style="">Carreiras</a></li>
+<li class="" style=""><a class="hover:text-[#F4A261] transition-colors" href="#" style="">Blog</a></li>
+<li class="" style=""><a class="hover:text-[#F4A261] transition-colors" href="#" style="">Parcerias</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6" style="">Contato</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-center gap-3" style=""><span class="material-symbols-outlined text-[#F4A261] text-lg" style="">mail</span> contato@carrorama.com</li>
+<li class="flex items-center gap-3" style=""><span class="material-symbols-outlined text-[#F4A261] text-lg" style="">call</span> 0800 555 1234</li>
+<li class="flex items-center gap-3" style=""><span class="material-symbols-outlined text-[#F4A261] text-lg" style="">location_on</span> São Paulo, SP</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+<p class="" style="">© 2024 Carrorama Fleet Management. Todos os direitos reservados.</p>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#" style="">Termos de Uso</a>
+<a class="hover:text-white" href="#" style="">Política de Privacidade</a>
+<a class="hover:text-white" href="#" style="">Compliance</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
