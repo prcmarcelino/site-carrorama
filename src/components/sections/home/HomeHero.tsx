@@ -36,29 +36,16 @@ export function HomeHero() {
           </Link>
         </div>
       </div>
-      <div className="relative">
-        <div className="absolute -inset-4 bg-brand/10 blur-3xl rounded-full" aria-hidden />
-        <div className="relative bg-slate-900 rounded-2xl border border-slate-800 shadow-2xl overflow-hidden aspect-[541/405] flex items-center justify-center">
-          <div className="relative flex h-full w-full items-center justify-center p-4">
-            <Image
-              src="/image-fce3d9a1-eec2-482e-8790-d88e411d152d.png"
-              alt="Frota de veículos gerenciada pela Carrorama"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-        </div>
-        <div className="absolute bottom-6 left-6 right-6 p-4 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
-          <div className="flex justify-between items-center text-white">
-            <div className="flex gap-4">
-              <div className="size-10 rounded-lg bg-success flex items-center justify-center text-slate-900" aria-hidden>↓</div>
-              <div>
-                <p className="text-xs opacity-70">Redução de Custos</p>
-                <p className="text-xl font-bold">-24.8% mensal</p>
-              </div>
-            </div>
-          </div>
+      <div className="flex items-end justify-end h-full">
+        <div className="relative w-full max-w-xl aspect-[541/405]">
+          <div className="absolute inset-0 bg-gradient-to-l from-slate-100 to-transparent" aria-hidden />
+          <Image
+            src="/image-fce3d9a1-eec2-482e-8790-d88e411d152d.png"
+            alt="Frota de veículos gerenciada pela Carrorama"
+            fill
+            priority
+            className="object-contain object-right"
+          />
         </div>
       </div>
     </section>
