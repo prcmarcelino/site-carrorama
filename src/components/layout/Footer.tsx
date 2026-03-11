@@ -82,7 +82,7 @@ export function Footer() {
           ))}
         </div>
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-          <p>© 2024 Carrorama Fleet Management. Todos os direitos reservados.</p>
+          <p>© 2012-2026 Carrorama Fleet. Todos os direitos reservados.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-white transition-colors">Termos de Uso</Link>
             <Link href="#" className="hover:text-white transition-colors">Política de Privacidade</Link>
