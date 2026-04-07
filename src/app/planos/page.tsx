@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { plans, comparisonFeatures, faq } from "@/lib/constants";
+import { plans, comparisonFeatures, faq, STRIPE_CHECKOUT_URL } from "@/lib/constants";
 import { buildMetadata, productJsonLd, faqJsonLd } from "@/lib/seo";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -95,7 +95,7 @@ export default function PlanosPage() {
                     variant="primary"
                     className="w-full rounded-lg"
                   >
-                    <Link href={plan.id === "elite" ? "/contato" : "#"}>
+                    <Link href={STRIPE_CHECKOUT_URL}>
                       {plan.cta}
                     </Link>
                   </Button>

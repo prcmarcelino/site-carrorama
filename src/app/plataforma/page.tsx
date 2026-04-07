@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { STRIPE_CHECKOUT_URL } from "@/lib/constants";
 import { buildMetadata } from "@/lib/seo";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -153,7 +154,7 @@ export default function PlataformaPage() {
                 Nossa plataforma evolui semanalmente com novas funcionalidades baseadas em IA.
               </p>
               <Button asChild variant="secondary" className="mt-6 rounded-lg border-white bg-[#14181e] text-white hover:bg-[#1a202c]">
-                <Link href="/contato">Agendar Demo</Link>
+                <Link href={STRIPE_CHECKOUT_URL}>Agendar Demo</Link>
               </Button>
             </Card>
           </div>

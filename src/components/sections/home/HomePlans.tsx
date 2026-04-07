@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { STRIPE_CHECKOUT_URL } from "@/lib/constants";
 
 const plansPreview = [
   {
@@ -50,7 +51,7 @@ export function HomePlans() {
                 ))}
               </ul>
               <Link
-                href={plan.featured ? "/contato" : "/planos"}
+                href={STRIPE_CHECKOUT_URL}
                 className="w-full py-4 rounded-xl border-2 border-slate-300 font-bold hover:border-success hover:text-success transition-all text-slate-900 text-center"
               >
                 {plan.cta}

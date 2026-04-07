@@ -20,7 +20,7 @@ export function HomeCta() {
             Começar grátis agora
           </Link>
           <Link
-            href="/contato"
+            href={STRIPE_CHECKOUT_URL}
             className="bg-white/10 border-2 border-white/20 font-black h-16 px-12 rounded-2xl hover:bg-white hover:text-dark transition-all text-lg flex items-center justify-center"
           >
             Falar com consultor

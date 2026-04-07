@@ -148,5 +148,6 @@ export const socialLinks = [
   { label: "LinkedIn", href: "https://www.linkedin.com/company/carrorama/", icon: "linkedin" },
 ] as const;
 
-/** Stripe Checkout URL - placeholder until integration */
-export const STRIPE_CHECKOUT_URL = process.env.NEXT_PUBLIC_STRIPE_CHECKOUT_URL ?? "#";
+/** URL única para CTAs de cadastro/contratação */
+export const STRIPE_CHECKOUT_URL =
+  process.env.NEXT_PUBLIC_STRIPE_CHECKOUT_URL ?? "https://carrorama-fleet-2-0.vercel.app/signup";
