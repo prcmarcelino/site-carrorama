@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     "Solução líder em gestão de frotas. Reduza custos operacionais com tecnologia de ponta. Experimente grátis.",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+      { url: "/favicon.ico?v=2" },
+      { url: "/favicon.svg?v=2", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png?v=2", type: "image/png", sizes: "96x96" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/favicon-96x96.png",
+    shortcut: "/favicon.ico?v=2",
+    apple: "/favicon-96x96.png?v=2",
   },
   openGraph: {
     type: "website",
